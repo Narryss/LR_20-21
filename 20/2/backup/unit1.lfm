@@ -1,0 +1,33 @@
+object Main: TMain
+  Left = 480
+  Height = 211
+  Top = 188
+  Width = 781
+  Caption = 'Редактирование сетки TStringGrid'
+  ClientHeight = 211
+  ClientWidth = 781
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object StringGrid1: TStringGrid
+    Left = 10
+    Height = 150
+    Top = 10
+    Width = 769
+    Color = clWhite
+    DefaultColWidth = 80
+    DefaultRowHeight = 22
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    TabOrder = 0
+    OnGetEditMask = StringGrid1GetEditMask
+  end
+  object Button1: TButton
+    Left = 360
+    Height = 31
+    Top = 170
+    Width = 94
+    Caption = 'Добавить'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
